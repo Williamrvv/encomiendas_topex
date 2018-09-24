@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Encomiendas</title>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="tile">
+  <div class="tile-header">
+    <h2 style="color: white; opacity: .75; font-size: 4rem; display: flex; justify-content: center; align-items: center; height: 100%;">Encomiendas</h2>
+  </div>
+  
+  <div class="tile-body">
+    <form id="form" onsubmit="return false;">
+      
+      <label class="form-input">
+        <i class="material-icons">lock</i>
+        <input type="password" name="user" required />
+        <span class="label">Usuario</span>
+        <div class="underline"></div>
+      </label>
+      
+      <div class="submit-container clearfix" style="margin-top: 2rem;">
+        <div id="submit" role="button" type="button" class="btn btn-irenic float-right" tabindex="0">
+          <span>LOGIN</span>
+        </div>
+        <div id="resp"></div>
+        
+        <div class="login-pending">
+          <div class=spinner>
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+          </div>
+          
+          <div class="login-granted-content">
+            <i class="material-icons">done</i>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
